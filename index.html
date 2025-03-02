@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-Grossing Films</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Highest-Grossing Films</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title..." class="search-input">
+            <select id="sort" class="sort-select">
+                <option value="title-asc">Sort by Title (A-Z)</option>
+                <option value="title-desc">Sort by Title (Z-A)</option>
+                <option value="year-asc">Sort by Year (Oldest First)</option>
+                <option value="year-desc">Sort by Year (Newest First)</option>
+                <option value="revenue-asc">Sort by Revenue (Low to High)</option>
+                <option value="revenue-desc">Sort by Revenue (High to Low)</option>
+            </select>
+        </div>
+        <table id="films-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Release Year</th>
+                    <th>Director(s)</th>
+                    <th>Box Office Revenue</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
